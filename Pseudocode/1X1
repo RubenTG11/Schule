@@ -1,0 +1,10 @@
+Ausgabe: Das kleine 1x1
+DEKLARIERE i,j als Integer und INITIALISIERE i=1 und j=2
+WIEDERHOLE 9 Mal:
+    erhöhe i um 1
+    WIEDERHOLE 9 Mal:
+        Ausgabe: i*j
+        erhöhe j um i
+    ENDE SCHLEIFE
+    Ausgabe: Leerzeile
+ENDE SCHLEIFE

@@ -1,0 +1,6 @@
+wiederhole 3 mal {
+    vorwärts();
+    nach_links_drehen();
+    vorwärts();
+    fressen();
+}
