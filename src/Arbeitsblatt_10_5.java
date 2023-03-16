@@ -25,11 +25,13 @@ public class Arbeitsblatt_10_5 {
         if(m <= 2) {
             m = m+10;
             j--;
+        }else{
+            m -= 2;
         }
 
         int c = j/100;
         int y = j%100;
-        int h = (((26*(m-2))/10) + t + y + y/4 + c/4 - 2*c) % 7;
+        int h = (((26*m-2)/10) + t + y + y/4 + c/4 - 2*c) % 7;
 
         System.out.println(h);
 

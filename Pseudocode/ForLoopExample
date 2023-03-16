@@ -4,3 +4,18 @@ wiederhole 3 mal {
     vorwärts();
     fressen();
 }
+
+Programm Passwort
+    Deklariere passwort als String und initialisiere als "simsalabim"
+    Deklariere input als String
+
+    WIEDERHOLE
+        Eingabe: input
+
+        WENN input != passwort
+            Ausgabe: "Noch einmal!"
+        ENDE WENN
+    SOLANGE input != passwort
+
+    Ausgabe: "richtig!"
+ENDE Programm
