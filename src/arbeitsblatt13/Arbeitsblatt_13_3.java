@@ -1,5 +1,6 @@
 package arbeitsblatt13;
 
+import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -10,14 +11,18 @@ public class Arbeitsblatt_13_3 {
         int eingabe;
         int versuch = 0;
 
-        Scanner scanner = new Scanner(System.in);
+        try(Scanner scanner = new Scanner(System.in)) {
+            do {
+                System.out.print("Errate die Zahl ("+(versuch+1)+". Versuch): ");
+                eingabe = scanner.nextInt();
+                versuch++;
+            } while (eingabe != random);
 
-        do {
-            System.out.print("Errate die Zahl ("+(versuch+1)+". Versuch): ");
-            eingabe = scanner.nextInt();
-            versuch++;
-        } while (eingabe != random);
+            System.out.println("Herzlichen Glückwunsch, du hast die Zahl erraten!");
+        } catch (InputMismatchException e){
+            System.out.println("Du musst eine Ganzzahl angeben!");
+        }
 
-        System.out.println("Herzlichen Glückwunsch, du hast die Zahl erraten!");
+
     }
 }
